@@ -17,5 +17,5 @@ long lerTicks() { noInterrupts(); long t = ticks; interrupts(); return t; }
 void loop() {
   Serial.println(ticks);
   delay(100);
-  servo.writeMicroseconds(10)
+  servo.writeMicroseconds(10);
 }

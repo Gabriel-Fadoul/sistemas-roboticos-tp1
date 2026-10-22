@@ -1,21 +1,55 @@
+#include <Servo.h>
 #include <Arduino.h>
 
-volatile long ticks = 0;
-void isrA() { if (digitalRead(2) == digitalRead(3)) ticks--; else ticks++; }
-void isrB() { if (digitalRead(2) == digitalRead(3)) ticks++; else ticks--; }
+Servo meuServo;
+
+const int pinoServo = 9;
+
 void setup() {
-pinMode(2, INPUT_PULLUP);
-pinMode(3, INPUT_PULLUP);
-attachInterrupt(digitalPinToInterrupt(2), isrA, CHANGE);
-attachInterrupt(digitalPinToInterrupt(3), isrB, CHANGE);
-Serial.begin(9600);
+  Serial.begin(9600);
+
+  meuServo.attach(pinoServo);
+  meuServo.write(90); // Parado inicialmente
+
+  Serial.println("Controle do Servo");
+  Serial.println("0   - Gira em um sentido");
+  Serial.println("180 - Gira no outro sentido");
+  Serial.println("P   - PARAR");
 }
 
-long lerTicks() { noInterrupts(); long t = ticks; interrupts(); return t; }
-
-
 void loop() {
-  Serial.println(ticks);
-  delay(100);
-  servo.writeMicroseconds(10);
+  if (Serial.available() > 0) {
+
+    String comando = Serial.readStringUntil('\n');
+    comando.trim();
+    comando.toUpperCase();
+
+    // Comando de parada
+    if (comando == "P" || comando == "PARAR") {
+      meuServo.write(90);
+      Serial.println("SERVO PARADO");
+      return;
+    }
+
+    // Verifica se o comando e numerico
+    if (comando.length() == 0) return;
+
+    for (int i = 0; i < comando.length(); i++) {
+      if (!isDigit(comando[i])) {
+        Serial.println("Comando invalido!");
+        return;
+      }
+    }
+
+    int valor = comando.toInt();
+
+    if (valor >= 0 && valor <= 180) {
+      meuServo.writeMicroseconds(valor);
+
+      Serial.print("Comando: ");
+      Serial.println(valor);
+    } else {
+      Serial.println("Valor invalido!");
+    }
+  }
 }

@@ -40,7 +40,8 @@ class Avoid:
         self.scan = None
         self.pose = None
 
-        filename = "avoidcfg2_%s.csv" % time.strftime("%Y%m%d_%H%M%S", time.localtime())
+        
+        filename = "exclude_%s.csv" % time.strftime("%Y%m%d_%H%M%S", time.localtime())
         filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
         self.csv_file = open(filepath, "w", newline="")
         self.csv_writer = csv.writer(self.csv_file)
@@ -99,12 +100,12 @@ class Avoid:
         # Velocidade linear: depende da distância até o obstáculo frontal.
         # Quanto mais perto do obstáculo, menor a velocidade; o clamp limita o valor
         # entre 0 e 1 para manter a velocidade dentro do máximo permitido.
-        v = V_MAX * clamp((front - 0.08) / (0.22 - 0.08), 0.0, 1.0)
+        v = V_MAX * clamp((front - 0.12) / (0.35 - 0.12), 0.0, 1.0)
 
         # Velocidade angular: a diferença entre left e right controla a direção do giro.
         # Se left > right, o robô gira para a direita; se left < right, gira para a esquerda.
         # O clamp mantém o valor dentro do limite W_MAX.
-        w = clamp(3.0 * (left - right), -W_MAX, W_MAX)
+        w = clamp(2.0 * W_MAX * (left - right), -W_MAX, W_MAX)
 
         # Retorna a combinação de velocidade linear e angular que será usada pelo controle.
         return v, w

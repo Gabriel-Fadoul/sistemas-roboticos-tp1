@@ -13,11 +13,17 @@ robot touching a wall reads about 0.037.
 
 Run:  ./run.sh run avoid      (see README.md in this folder)
 """
+import csv
+import math
+import os
+import time
+
 import rospy
 from geometry_msgs.msg import Twist
+from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 
-from psr_hero.utils import V_MAX, W_MAX, clamp
+from psr_hero.utils import V_MAX, W_MAX, clamp, pose_from_odom
 
 
 class Avoid:
@@ -32,6 +38,15 @@ class Avoid:
         # Guarda a última leitura do sensor lidar recebida.
         # Começa como None até que a primeira mensagem de LaserScan chegue.
         self.scan = None
+        self.pose = None
+
+        filename = "avoid_%s.csv" % time.strftime("%Y%m%d_%H%M%S", time.localtime())
+        filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
+        self.csv_file = open(filepath, "w", newline="")
+        self.csv_writer = csv.writer(self.csv_file)
+        self.csv_writer.writerow(["t", "x", "y", "yaw", "min_range", "v", "w"])
+        self.log_start_time = None
+        rospy.on_shutdown(self.close_log)
 
         # Publicador da velocidade do robô: envia comandos do tipo geometry_msgs/Twist
         # para o tópico /hero_X/cmd_vel, onde X é o identificador do robô.
@@ -42,11 +57,17 @@ class Avoid:
         self.sub = rospy.Subscriber(
             "/hero_%d/laser" % self.robot, LaserScan, self.on_scan, queue_size=1
         )
+        self.odom_sub = rospy.Subscriber(
+            "/hero_%d/odom" % self.robot, Odometry, self.on_odom, queue_size=1
+        )
 
     def on_scan(self, scan):
         # Callback do sensor lidar. Guarda a última leitura para que o loop principal
         # possa usá-la para decidir como o robô deve se mover.
         self.scan = scan
+
+    def on_odom(self, msg):
+        self.pose = pose_from_odom(msg)
 
     def compute_command(self, ranges):
         """Turn the 8 lidar ranges into a velocity command.
@@ -101,6 +122,34 @@ class Avoid:
         # Envia o comando para o tópico de controle do robô.
         self.pub.publish(cmd)
 
+    def log_data(self, pose, ranges, v, w):
+        now = rospy.get_time()
+        if self.log_start_time is None:
+            self.log_start_time = now
+        t = now - self.log_start_time
+
+        if pose is None:
+            x = y = yaw = math.nan
+        else:
+            x, y, yaw = pose
+
+        self.csv_writer.writerow(
+            [
+                "%.3f" % t,
+                "%.4f" % x,
+                "%.4f" % y,
+                "%.4f" % yaw,
+                "%.4f" % min(ranges),
+                "%.4f" % v,
+                "%.4f" % w,
+            ]
+        )
+        self.csv_file.flush()
+
+    def close_log(self):
+        if not self.csv_file.closed:
+            self.csv_file.close()
+
     def run(self):
         # Define a taxa do loop principal em 20 Hz, ou seja, 20 iterações por segundo.
         rate = rospy.Rate(20)
@@ -113,7 +162,10 @@ class Avoid:
             else:
                 # Converte a leitura do sensor para uma lista simples e calcula a ação do robô.
                 # Depois publica a nova velocidade para continuar andando com segurança.
-                self.publish(*self.compute_command(list(self.scan.ranges)))
+                ranges = list(self.scan.ranges)
+                v, w = self.compute_command(ranges)
+                self.publish(v, w)
+                self.log_data(self.pose, ranges, v, w)
 
             # Espera o tempo necessário para manter a taxa de 20 Hz.
             rate.sleep()

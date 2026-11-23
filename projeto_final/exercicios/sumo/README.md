@@ -1,47 +1,47 @@
-# Sumô (`sumo`)
+# Sumô
 
-**Objetivo:** empurrar o adversário para fora do ringue circular sem sair dele.
+Códigos do sumô do projeto final.
 
-## Regras
+- `sumo.py`: versão final
+- `sumo_v1.py`: primeira versão, usada para comparar com a final
+- `logs/`: saídas do terminal dos testes que usamos no relatório
+- vídeo do sumô: [colocar o nome do arquivo]
 
-- o ringue tem raio de **0,40 m**, centro em (0, 0), e fica 6 cm acima do chão; não há parede;
-- perde a rodada o robô cujo **centro** sair do ringue (ele cai). Se os dois saírem juntos, é empate;
-- uma rodada sem vencedor termina empatada após **40 s**;
-- `hero_0` (azul) começa em (−0,18; ~0) olhando para +x e `hero_1` (laranja) em (0,18; ~0) olhando para −x,
-  com pequenas variações aleatórias de posição a cada rodada;
-- depois de cada rodada os robôs voltam às posições iniciais e o jogo continua;
-- os dois robôs têm a mesma tração: um empurrão frontal tende a empatar. Ângulo de ataque,
-  momento certo e a própria posição no ringue fazem a diferença.
-
-## Tópicos
-
-| Tópico | Tipo | Uso |
-|---|---|---|
-| `/hero_N/odom` | `nav_msgs/Odometry` | pose do seu robô e do adversário; `twist.twist.linear.x` é a sua velocidade |
-| `/hero_N/laser` | `sensor_msgs/LaserScan` | o lidar também enxerga o adversário (opcional) |
-| `/hero_N/cmd_vel` | `geometry_msgs/Twist` | saída |
-| `/game/state` | `std_msgs/String` | JSON com `wins`, `draws` e `round_time` |
-
-## O que implementar (`sumo.py`)
-
-- **TODO 1 (ROS):** assine a odometria do seu robô (`~robot`, função `self.on_me`) e a do
-  adversário (`~opponent`, função `self.on_opp`).
-- **TODO 2 (controle):** `compute_command(me, opp, speed, now)` devolve `(linear_x, angular_z)`;
-  `me` e `opp` são `(x, y, yaw)`, `speed` é a sua velocidade para a frente e `now` é o tempo em segundos.
+A única diferença entre as duas versões é quando o robô começa a empurrar. Na v1 ele empurra assim que chega a 0,16 m do adversário. Na final ele espera chegar perto do ponto de ataque, que fica ao lado e atrás do adversário (ou passar 1,5 s).
 
 ## Como rodar
 
+Precisa do kit da disciplina (`psr-hero-kit`) já instalado. No Windows, rodamos tudo pelo Ubuntu no WSL.
+
+Primeiro copie os dois arquivos para a pasta do sumô do kit e entre na pasta do kit:
+
 ```bash
-./run.sh run sumo                        # seu código nos dois robôs
-./run.sh run sumo robot1:=none           # só o hero_0; o hero_1 fica parado (bom para começar)
-./run.sh run sumo robot1:=sumo_v2.py     # duas versões suas, uma contra a outra
+cp sumo.py sumo_v1.py ~/psr-hero-kit/exercicios/sumo/
+cd ~/psr-hero-kit
 ```
 
-Argumentos: `robot0:=` e `robot1:=` recebem o nome de um arquivo desta pasta ou `none`.
+Depois é só escolher o teste. `robot0` é o robô azul e `robot1` é o laranja. `none` deixa o robô parado.
 
-## Dicas
+```bash
+# final contra robô parado
+./run.sh run sumo robot1:=none                    # final no azul
+./run.sh run sumo robot0:=none robot1:=sumo.py    # final no laranja
 
-- comece com o adversário parado (`robot1:=none`) e faça o robô empurrá-lo para fora;
-- use a distância do seu robô ao centro (`math.hypot(x, y)`) para não sair sozinho;
-- empurrar na direção que leva o adversário para a borda mais próxima é mais eficaz do que empurrar para o centro dele;
-- dois nós idênticos podem travar um contra o outro: experimente variações de estratégia.
+# final contra a v1
+./run.sh run sumo robot1:=sumo_v1.py                    # final no azul
+./run.sh run sumo robot0:=sumo_v1.py robot1:=sumo.py    # final no laranja
+
+# v1 contra ela mesma
+./run.sh run sumo robot0:=sumo_v1.py robot1:=sumo_v1.py
+```
+
+Para parar é `Ctrl+C`.
+
+No terminal aparecem as trocas de estado do robô (`approach`, `push`, `recover`) e o placar de cada rodada, por exemplo `PLACAR hero_0: wins=[6, 3] draws=11`. O primeiro número de `wins` é do azul e o segundo do laranja.
+
+## Logs
+
+- `log_final_vs_parado_azul.txt` e `log_final_vs_parado_laranja.txt`: final contra o robô parado. Ganhou todas dos dois lados.
+- `log_final_vs_v1_azul.txt`: final no azul contra a v1. 6 vitórias, 3 derrotas e 11 empates.
+- `log_final_vs_v1_laranja.txt`: final no laranja contra a v1. 7 vitórias, 6 derrotas e 15 empates.
+- `log_v1_vs_v1.txt`: v1 contra ela mesma. Azul 4, laranja 11 e 5 empates.

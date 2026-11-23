@@ -1,0 +1,291 @@
+[psr] abrindo o simulador: sumo com 2 robô(s) (a primeira abertura pode levar 1-2 min)
+[psr] aguardando o simulador............................. ok
+[psr] rodando exercicios/sumo (Ctrl-C para parar; o simulador continua aberto)
+... logging to /root/.ros/log/60108e7e-e761-11f1-9714-0e012991f7c2/roslaunch-3c8f1d853686-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/ws/psr_exercicios/launch/sumo.launch
+[1mstarted roslaunch server http://3c8f1d853686:33245/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /hero_bridge/host: psrkit-sim
+ * /hero_bridge/port: 11312
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sumo_1/opponent: 0
+ * /sumo_1/robot: 1
+
+NODES
+  /
+    hero_bridge (psr_hero/hero_bridge.py)
+    sumo_1 (psr_exercicios/sumo.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [30][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/ws/psr_exercicios/launch/sumo.launch http://localhost:11311
+[1msetting /run_id to 60108e7e-e761-11f1-9714-0e012991f7c2[0m
+[1mprocess[rosout-1]: started with pid [40][0m
+started core service [/rosout]
+[1mprocess[hero_bridge-2]: started with pid [43][0m
+[1mprocess[sumo_1-3]: started with pid [44][0m
+[INFO] [1795454083.991478]: connected to the simulator at psrkit-sim:11312
+[INFO] [1795454083.998269]: scenario 'sumo' with 2 robot(s)
+[33m[WARN] [1795454084.086825]: waiting for odometry (TODO 1)
+[0m[INFO] [1795454084.109477]: PLACAR hero_1: wins=[0, 0] draws=0
+[INFO] [1795454084.137035]: hero_1: None -> approach | eu a 0.19 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454085.587412]: hero_1: approach -> push | eu a 0.01 m do centro, ele a 0.19 m, distancia entre nos 0.17 m
+[INFO] [1795454088.637357]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.38 m, distancia entre nos 0.07 m
+[INFO] [1795454090.637138]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.39 m, distancia entre nos 0.20 m
+[INFO] [1795454091.887181]: hero_1: approach -> push | eu a 0.23 m do centro, ele a 0.39 m, distancia entre nos 0.17 m
+[INFO] [1795454092.676102]: PLACAR hero_1: wins=[0, 1] draws=0
+[INFO] [1795454092.736904]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.40 m, distancia entre nos 0.07 m
+[INFO] [1795454095.237222]: hero_1: recover -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454096.787200]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454098.987096]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.26 m, distancia entre nos 0.07 m
+[INFO] [1795454100.637002]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.25 m, distancia entre nos 0.08 m
+[INFO] [1795454103.187344]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.35 m, distancia entre nos 0.07 m
+[INFO] [1795454105.137295]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.35 m, distancia entre nos 0.17 m
+[INFO] [1795454106.287019]: hero_1: approach -> push | eu a 0.21 m do centro, ele a 0.35 m, distancia entre nos 0.15 m
+[INFO] [1795454107.337172]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.38 m, distancia entre nos 0.07 m
+[INFO] [1795454109.386939]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.39 m, distancia entre nos 0.20 m
+[INFO] [1795454110.637036]: hero_1: approach -> push | eu a 0.23 m do centro, ele a 0.39 m, distancia entre nos 0.16 m
+[INFO] [1795454111.301947]: PLACAR hero_1: wins=[0, 2] draws=0
+[INFO] [1795454113.837019]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454115.287221]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454128.494548]: PLACAR hero_1: wins=[0, 3] draws=0
+[INFO] [1795454131.037093]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454132.537220]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454134.736971]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454136.337292]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454136.387447]: hero_1: approach -> push | eu a 0.19 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454138.637033]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.32 m, distancia entre nos 0.07 m
+[INFO] [1795454140.187132]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.32 m, distancia entre nos 0.14 m
+[INFO] [1795454142.293814]: PLACAR hero_1: wins=[0, 4] draws=0
+[INFO] [1795454144.837396]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454146.337272]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454160.159821]: PLACAR hero_1: wins=[0, 5] draws=0
+[INFO] [1795454162.737175]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454164.237452]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454167.187323]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.36 m, distancia entre nos 0.07 m
+[INFO] [1795454169.187227]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.37 m, distancia entre nos 0.18 m
+[INFO] [1795454170.437074]: hero_1: approach -> push | eu a 0.23 m do centro, ele a 0.37 m, distancia entre nos 0.15 m
+[INFO] [1795454171.437126]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.40 m, distancia entre nos 0.07 m
+[INFO] [1795454171.585550]: PLACAR hero_1: wins=[0, 6] draws=0
+[INFO] [1795454174.087131]: hero_1: recover -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454175.637061]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.16 m
+[INFO] [1795454189.387085]: hero_1: push -> recover | eu a 0.37 m do centro, ele a 0.38 m, distancia entre nos 0.07 m
+[INFO] [1795454191.386968]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.38 m, distancia entre nos 0.19 m
+[INFO] [1795454192.586961]: hero_1: approach -> push | eu a 0.23 m do centro, ele a 0.38 m, distancia entre nos 0.15 m
+[INFO] [1795454193.588824]: PLACAR hero_1: wins=[0, 7] draws=0
+[INFO] [1795454196.087429]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454197.637221]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454199.987022]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454201.590799]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.32 m, distancia entre nos 0.13 m
+[INFO] [1795454203.772523]: PLACAR hero_1: wins=[0, 8] draws=0
+[INFO] [1795454206.337090]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454207.837368]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454210.787194]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.36 m, distancia entre nos 0.07 m
+[INFO] [1795454212.737228]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.36 m, distancia entre nos 0.17 m
+[INFO] [1795454213.937255]: hero_1: approach -> push | eu a 0.21 m do centro, ele a 0.36 m, distancia entre nos 0.15 m
+[INFO] [1795454214.987065]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.39 m, distancia entre nos 0.07 m
+[INFO] [1795454217.037310]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.39 m, distancia entre nos 0.20 m
+[INFO] [1795454218.287091]: hero_1: approach -> push | eu a 0.24 m do centro, ele a 0.39 m, distancia entre nos 0.16 m
+[INFO] [1795454218.955008]: PLACAR hero_1: wins=[0, 9] draws=0
+[INFO] [1795454221.537344]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454223.037091]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.16 m
+[INFO] [1795454236.390861]: PLACAR hero_1: wins=[0, 10] draws=0
+[INFO] [1795454238.937197]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454240.486982]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.14 m
+[INFO] [1795454253.664633]: PLACAR hero_1: wins=[0, 11] draws=0
+[INFO] [1795454256.237170]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454257.786997]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.14 m
+[INFO] [1795454271.335501]: PLACAR hero_1: wins=[0, 12] draws=0
+[INFO] [1795454273.887029]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454275.337245]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.16 m
+[INFO] [1795454277.487257]: hero_1: push -> recover | eu a 0.31 m do centro, ele a 0.29 m, distancia entre nos 0.07 m
+[INFO] [1795454279.088006]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.29 m, distancia entre nos 0.11 m
+[INFO] [1795454281.486502]: PLACAR hero_1: wins=[0, 13] draws=0
+[INFO] [1795454284.037307]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.19 m, distancia entre nos 0.38 m
+[INFO] [1795454285.587219]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454287.887126]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454289.487112]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.31 m, distancia entre nos 0.13 m
+[INFO] [1795454291.657732]: PLACAR hero_1: wins=[0, 14] draws=0
+[INFO] [1795454294.237235]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454295.737025]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454309.032365]: PLACAR hero_1: wins=[0, 15] draws=0
+[INFO] [1795454311.587279]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454313.087295]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.16 m
+[INFO] [1795454315.037052]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454316.787136]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.21 m, distancia entre nos 0.08 m
+[INFO] [1795454316.936946]: hero_1: approach -> push | eu a 0.17 m do centro, ele a 0.21 m, distancia entre nos 0.08 m
+[INFO] [1795454320.100013]: PLACAR hero_1: wins=[0, 16] draws=0
+[INFO] [1795454322.637356]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454324.137351]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454326.037329]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454327.687214]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454327.837075]: hero_1: approach -> push | eu a 0.17 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454330.961756]: PLACAR hero_1: wins=[0, 17] draws=0
+[INFO] [1795454333.536939]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454335.037052]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454337.186989]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454338.837037]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454338.937066]: hero_1: approach -> push | eu a 0.18 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454341.487208]: hero_1: push -> recover | eu a 0.33 m do centro, ele a 0.33 m, distancia entre nos 0.07 m
+[INFO] [1795454343.237031]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.33 m, distancia entre nos 0.15 m
+[INFO] [1795454345.141153]: PLACAR hero_1: wins=[0, 18] draws=0
+[INFO] [1795454347.687270]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454349.136936]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454351.137289]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454352.736906]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454352.937065]: hero_1: approach -> push | eu a 0.17 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454356.016795]: PLACAR hero_1: wins=[0, 19] draws=0
+[INFO] [1795454358.587134]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454360.137097]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454362.487147]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454364.036964]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.31 m, distancia entre nos 0.13 m
+[INFO] [1795454366.232763]: PLACAR hero_1: wins=[0, 20] draws=0
+[INFO] [1795454368.787126]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454370.287018]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.14 m
+[INFO] [1795454383.916741]: PLACAR hero_1: wins=[0, 21] draws=0
+[INFO] [1795454386.487089]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454387.937035]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454390.337122]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.23 m, distancia entre nos 0.07 m
+[INFO] [1795454392.137000]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.16 m, distancia entre nos 0.07 m
+[INFO] [1795454392.787065]: hero_1: approach -> push | eu a 0.11 m do centro, ele a 0.15 m, distancia entre nos 0.08 m
+[INFO] [1795454396.040008]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454397.637172]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.31 m, distancia entre nos 0.13 m
+[INFO] [1795454399.816135]: PLACAR hero_1: wins=[0, 22] draws=0
+[INFO] [1795454402.387052]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454403.887143]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454417.367695]: PLACAR hero_1: wins=[0, 23] draws=0
+[INFO] [1795454419.937370]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454421.437862]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454459.964638]: PLACAR hero_1: wins=[0, 23] draws=1
+[INFO] [1795454462.037131]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454463.537207]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454465.887173]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.30 m, distancia entre nos 0.07 m
+[INFO] [1795454467.440218]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.30 m, distancia entre nos 0.12 m
+[INFO] [1795454469.713324]: PLACAR hero_1: wins=[0, 24] draws=1
+[INFO] [1795454472.287067]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454473.687035]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.16 m
+[INFO] [1795454475.787217]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.28 m, distancia entre nos 0.07 m
+[INFO] [1795454477.437093]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.27 m, distancia entre nos 0.10 m
+[INFO] [1795454479.954827]: PLACAR hero_1: wins=[0, 25] draws=1
+[INFO] [1795454482.487163]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454483.987225]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454485.987006]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.24 m, distancia entre nos 0.07 m
+[INFO] [1795454487.586939]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.21 m, distancia entre nos 0.07 m
+[INFO] [1795454487.786932]: hero_1: approach -> push | eu a 0.17 m do centro, ele a 0.21 m, distancia entre nos 0.08 m
+[INFO] [1795454490.944921]: PLACAR hero_1: wins=[0, 26] draws=1
+[INFO] [1795454493.487052]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454494.937023]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454496.936940]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454498.537095]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454498.636981]: hero_1: approach -> push | eu a 0.19 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454501.637048]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.40 m, distancia entre nos 0.07 m
+[INFO] [1795454501.822059]: PLACAR hero_1: wins=[0, 27] draws=1
+[INFO] [1795454504.387034]: hero_1: recover -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454505.887069]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.19 m, distancia entre nos 0.16 m
+[INFO] [1795454508.187054]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454509.837069]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454509.986999]: hero_1: approach -> push | eu a 0.17 m do centro, ele a 0.22 m, distancia entre nos 0.08 m
+[INFO] [1795454512.687050]: hero_1: push -> recover | eu a 0.33 m do centro, ele a 0.33 m, distancia entre nos 0.07 m
+[INFO] [1795454514.437032]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.33 m, distancia entre nos 0.14 m
+[INFO] [1795454516.358122]: PLACAR hero_1: wins=[0, 28] draws=1
+[INFO] [1795454518.937135]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454520.437096]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454522.537086]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.27 m, distancia entre nos 0.07 m
+[INFO] [1795454524.187274]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.26 m, distancia entre nos 0.09 m
+[INFO] [1795454526.878789]: PLACAR hero_1: wins=[0, 29] draws=1
+[INFO] [1795454529.437145]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454530.837137]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454532.787332]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454534.437044]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454534.536979]: hero_1: approach -> push | eu a 0.18 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454537.464899]: PLACAR hero_1: wins=[0, 30] draws=1
+[INFO] [1795454540.037140]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454541.439948]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454543.439969]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.26 m, distancia entre nos 0.07 m
+[INFO] [1795454545.187012]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.24 m, distancia entre nos 0.08 m
+[INFO] [1795454548.137245]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.40 m, distancia entre nos 0.07 m
+[INFO] [1795454548.186324]: PLACAR hero_1: wins=[0, 31] draws=1
+[INFO] [1795454550.737400]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454552.286938]: hero_1: approach -> push | eu a 0.03 m do centro, ele a 0.19 m, distancia entre nos 0.18 m
+[INFO] [1795454555.290899]: PLACAR hero_1: wins=[0, 32] draws=1
+[INFO] [1795454557.837049]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.36 m
+[INFO] [1795454559.287188]: hero_1: approach -> push | eu a 0.07 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454561.387248]: hero_1: push -> recover | eu a 0.31 m do centro, ele a 0.29 m, distancia entre nos 0.07 m
+[INFO] [1795454563.036994]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.29 m, distancia entre nos 0.12 m
+[INFO] [1795454565.351562]: PLACAR hero_1: wins=[0, 33] draws=1
+[INFO] [1795454567.887000]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454569.387092]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454571.787066]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454573.337090]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.32 m, distancia entre nos 0.13 m
+[INFO] [1795454575.532744]: PLACAR hero_1: wins=[0, 34] draws=1
+[INFO] [1795454578.087159]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454579.587268]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454592.707290]: PLACAR hero_1: wins=[0, 35] draws=1
+[INFO] [1795454595.287095]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454596.787102]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.16 m
+[INFO] [1795454618.378818]: PLACAR hero_1: wins=[0, 36] draws=1
+[INFO] [1795454620.987312]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454622.486932]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454624.837132]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.24 m, distancia entre nos 0.07 m
+[INFO] [1795454626.587233]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.19 m, distancia entre nos 0.07 m
+[INFO] [1795454626.887253]: hero_1: approach -> push | eu a 0.15 m do centro, ele a 0.19 m, distancia entre nos 0.08 m
+[INFO] [1795454629.587405]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.29 m, distancia entre nos 0.07 m
+[INFO] [1795454631.187154]: hero_1: recover -> push | eu a 0.19 m do centro, ele a 0.29 m, distancia entre nos 0.12 m
+[INFO] [1795454633.516589]: PLACAR hero_1: wins=[0, 37] draws=1
+[INFO] [1795454636.087354]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.19 m, distancia entre nos 0.38 m
+[INFO] [1795454637.637202]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454640.337038]: hero_1: push -> recover | eu a 0.34 m do centro, ele a 0.34 m, distancia entre nos 0.07 m
+[INFO] [1795454642.137082]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.34 m, distancia entre nos 0.15 m
+[INFO] [1795454644.053196]: PLACAR hero_1: wins=[0, 38] draws=1
+[INFO] [1795454646.587018]: hero_1: push -> recover | eu a 0.33 m do centro, ele a 0.18 m, distancia entre nos 0.16 m
+[INFO] [1795454646.637148]: hero_1: recover -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454648.036968]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454650.237309]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.24 m, distancia entre nos 0.07 m
+[INFO] [1795454651.937230]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.19 m, distancia entre nos 0.07 m
+[INFO] [1795454652.237114]: hero_1: approach -> push | eu a 0.15 m do centro, ele a 0.19 m, distancia entre nos 0.08 m
+[INFO] [1795454654.837128]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.29 m, distancia entre nos 0.07 m
+[INFO] [1795454656.387186]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.28 m, distancia entre nos 0.11 m
+[INFO] [1795454658.761094]: PLACAR hero_1: wins=[0, 39] draws=1
+[INFO] [1795454661.337327]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.36 m
+[INFO] [1795454662.839289]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454665.187093]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.24 m, distancia entre nos 0.07 m
+[INFO] [1795454666.837290]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.20 m, distancia entre nos 0.07 m
+[INFO] [1795454667.087228]: hero_1: approach -> push | eu a 0.16 m do centro, ele a 0.20 m, distancia entre nos 0.08 m
+[INFO] [1795454669.687255]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.31 m, distancia entre nos 0.07 m
+[INFO] [1795454671.287302]: hero_1: recover -> push | eu a 0.20 m do centro, ele a 0.31 m, distancia entre nos 0.13 m
+[INFO] [1795454673.489324]: PLACAR hero_1: wins=[0, 40] draws=1
+[INFO] [1795454676.087389]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454677.587229]: hero_1: approach -> push | eu a 0.05 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454691.108583]: PLACAR hero_1: wins=[0, 41] draws=1
+[INFO] [1795454693.687221]: hero_1: push -> approach | eu a 0.18 m do centro, ele a 0.19 m, distancia entre nos 0.37 m
+[INFO] [1795454695.137275]: hero_1: approach -> push | eu a 0.06 m do centro, ele a 0.19 m, distancia entre nos 0.15 m
+[INFO] [1795454697.140147]: hero_1: push -> recover | eu a 0.30 m do centro, ele a 0.25 m, distancia entre nos 0.07 m
+[INFO] [1795454698.687155]: hero_1: recover -> approach | eu a 0.20 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454698.789513]: hero_1: approach -> push | eu a 0.18 m do centro, ele a 0.23 m, distancia entre nos 0.08 m
+[INFO] [1795454701.857663]: PLACAR hero_1: wins=[0, 42] draws=1
+[INFO] [1795454704.437396]: hero_1: push -> approach | eu a 0.19 m do centro, ele a 0.18 m, distancia entre nos 0.37 m
+[INFO] [1795454705.987063]: hero_1: approach -> push | eu a 0.04 m do centro, ele a 0.18 m, distancia entre nos 0.15 m
+[INFO] [1795454708.736956]: hero_1: push -> recover | eu a 0.35 m do centro, ele a 0.34 m, distancia entre nos 0.07 m
+[INFO] [1795454710.640182]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.34 m, distancia entre nos 0.16 m
+[INFO] [1795454711.687227]: hero_1: approach -> push | eu a 0.20 m do centro, ele a 0.34 m, distancia entre nos 0.15 m
+[INFO] [1795454712.787168]: hero_1: push -> recover | eu a 0.36 m do centro, ele a 0.38 m, distancia entre nos 0.07 m
+[INFO] [1795454714.837078]: hero_1: recover -> approach | eu a 0.19 m do centro, ele a 0.38 m, distancia entre nos 0.19 m
+[INFO] [1795454716.187508]: hero_1: approach -> push | eu a 0.24 m do centro, ele a 0.38 m, distancia entre nos 0.15 m
+[INFO] [1795454717.051698]: PLACAR hero_1: wins=[0, 43] draws=1
+^C[sumo_1-3] killing on exit
+[hero_bridge-2] killing on exit
+[33m[WARN] [1795454718.284168]: simulator connection lost
+[0m[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,25 @@
+inicio t=119.9 {"score": [9, 0], "tags": [0, 0, 0, 0]}
+   0.0 s  {"score": [9, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  11.9 s  {"score": [10, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  25.0 s  {"score": [11, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  38.2 s  {"score": [12, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  51.2 s  {"score": [13, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  64.4 s  {"score": [14, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  77.6 s  {"score": [15, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+  90.7 s  {"score": [16, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 103.8 s  {"score": [17, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 117.3 s  {"score": [18, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 130.5 s  {"score": [19, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 143.6 s  {"score": [20, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 156.7 s  {"score": [21, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 169.8 s  {"score": [22, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 183.3 s  {"score": [23, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 196.4 s  {"score": [24, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 209.7 s  {"score": [25, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 222.8 s  {"score": [26, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 236.0 s  {"score": [27, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 249.1 s  {"score": [28, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 262.3 s  {"score": [29, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 275.6 s  {"score": [30, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+ 288.8 s  {"score": [31, 0], "tags": [0, 0, 0, 0]}  Ponto do azul!
+fim 300.0 s  resultado da partida: {"score": [22, 0], "tags": [0, 0, 0, 0]}

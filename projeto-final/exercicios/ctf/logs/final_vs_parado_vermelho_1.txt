@@ -1,0 +1,26 @@
+inicio t=21.9 {"score": [0, 1], "tags": [0, 0, 0, 0]}
+   0.0 s  {"score": [0, 1], "tags": [0, 0, 0, 0]}  
+   5.0 s  {"score": [0, 2], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  18.2 s  {"score": [0, 3], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  31.4 s  {"score": [0, 4], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  44.6 s  {"score": [0, 5], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  57.8 s  {"score": [0, 6], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  70.8 s  {"score": [0, 7], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  83.8 s  {"score": [0, 8], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+  97.2 s  {"score": [0, 9], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 110.6 s  {"score": [0, 10], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 124.0 s  {"score": [0, 11], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 137.2 s  {"score": [0, 12], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 150.6 s  {"score": [0, 13], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 163.9 s  {"score": [0, 14], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 177.1 s  {"score": [0, 15], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 190.2 s  {"score": [0, 16], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 203.3 s  {"score": [0, 17], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 216.4 s  {"score": [0, 18], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 229.6 s  {"score": [0, 19], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 243.0 s  {"score": [0, 20], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 256.2 s  {"score": [0, 21], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 269.3 s  {"score": [0, 22], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 282.4 s  {"score": [0, 23], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+ 295.4 s  {"score": [0, 24], "tags": [0, 0, 0, 0]}  Ponto do vermelho!
+fim 300.0 s  resultado da partida: {"score": [0, 23], "tags": [0, 0, 0, 0]}

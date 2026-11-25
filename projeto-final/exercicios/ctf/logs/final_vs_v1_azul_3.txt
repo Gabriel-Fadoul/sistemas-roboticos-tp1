@@ -1,0 +1,73 @@
+inicio t=874.5 {"score": [47, 0], "tags": [28, 0, 125, 0]}
+   0.0 s  {"score": [47, 0], "tags": [28, 0, 125, 0]}  
+   3.6 s  {"score": [47, 0], "tags": [29, 0, 125, 0]}  hero_3 segurou o hero_0 por 4 s
+   4.6 s  {"score": [47, 0], "tags": [29, 0, 126, 0]}  hero_1 segurou o hero_2 por 4 s
+  10.1 s  {"score": [47, 0], "tags": [29, 0, 127, 0]}  hero_1 segurou o hero_2 por 4 s
+  15.6 s  {"score": [47, 0], "tags": [29, 0, 128, 0]}  hero_1 segurou o hero_2 por 4 s
+  17.6 s  {"score": [48, 0], "tags": [29, 0, 128, 0]}  Ponto do azul!
+  23.6 s  {"score": [48, 0], "tags": [30, 0, 128, 0]}  hero_3 segurou o hero_0 por 4 s
+  25.0 s  {"score": [48, 0], "tags": [30, 0, 129, 0]}  hero_1 segurou o hero_2 por 4 s
+  30.5 s  {"score": [48, 0], "tags": [30, 0, 130, 0]}  hero_1 segurou o hero_2 por 4 s
+  36.0 s  {"score": [48, 0], "tags": [30, 0, 131, 0]}  hero_1 segurou o hero_2 por 4 s
+  37.6 s  {"score": [49, 0], "tags": [30, 0, 131, 0]}  Ponto do azul!
+  43.7 s  {"score": [49, 0], "tags": [31, 0, 131, 0]}  hero_3 segurou o hero_0 por 4 s
+  44.8 s  {"score": [49, 0], "tags": [31, 0, 132, 0]}  hero_1 segurou o hero_2 por 4 s
+  50.4 s  {"score": [49, 0], "tags": [31, 0, 133, 0]}  hero_1 segurou o hero_2 por 4 s
+  55.9 s  {"score": [49, 0], "tags": [31, 0, 134, 0]}  hero_1 segurou o hero_2 por 4 s
+  57.5 s  {"score": [50, 0], "tags": [31, 0, 134, 0]}  Ponto do azul!
+  64.7 s  {"score": [50, 0], "tags": [31, 0, 135, 0]}  hero_1 segurou o hero_2 por 4 s
+  70.2 s  {"score": [50, 0], "tags": [31, 0, 136, 0]}  hero_1 segurou o hero_2 por 4 s
+  73.2 s  {"score": [51, 0], "tags": [31, 0, 136, 0]}  Ponto do azul!
+  79.4 s  {"score": [51, 0], "tags": [32, 0, 136, 0]}  hero_3 segurou o hero_0 por 4 s
+  80.6 s  {"score": [51, 0], "tags": [32, 0, 137, 0]}  hero_1 segurou o hero_2 por 4 s
+  86.1 s  {"score": [51, 0], "tags": [32, 0, 138, 0]}  hero_1 segurou o hero_2 por 4 s
+  91.6 s  {"score": [51, 0], "tags": [32, 0, 139, 0]}  hero_1 segurou o hero_2 por 4 s
+  93.1 s  {"score": [52, 0], "tags": [32, 0, 139, 0]}  Ponto do azul!
+  99.2 s  {"score": [52, 0], "tags": [33, 0, 139, 0]}  hero_3 segurou o hero_0 por 4 s
+ 100.3 s  {"score": [52, 0], "tags": [33, 0, 140, 0]}  hero_1 segurou o hero_2 por 4 s
+ 105.8 s  {"score": [52, 0], "tags": [33, 0, 141, 0]}  hero_1 segurou o hero_2 por 4 s
+ 111.4 s  {"score": [52, 0], "tags": [33, 0, 142, 0]}  hero_1 segurou o hero_2 por 4 s
+ 113.0 s  {"score": [53, 0], "tags": [33, 0, 142, 0]}  Ponto do azul!
+ 119.0 s  {"score": [53, 0], "tags": [34, 0, 142, 0]}  hero_3 segurou o hero_0 por 4 s
+ 120.2 s  {"score": [53, 0], "tags": [34, 0, 143, 0]}  hero_1 segurou o hero_2 por 4 s
+ 125.8 s  {"score": [53, 0], "tags": [34, 0, 144, 0]}  hero_1 segurou o hero_2 por 4 s
+ 131.3 s  {"score": [53, 0], "tags": [34, 0, 145, 0]}  hero_1 segurou o hero_2 por 4 s
+ 132.9 s  {"score": [54, 0], "tags": [34, 0, 145, 0]}  Ponto do azul!
+ 140.2 s  {"score": [54, 0], "tags": [34, 0, 146, 0]}  hero_1 segurou o hero_2 por 4 s
+ 145.7 s  {"score": [54, 0], "tags": [34, 0, 147, 0]}  hero_1 segurou o hero_2 por 4 s
+ 148.6 s  {"score": [55, 0], "tags": [34, 0, 147, 0]}  Ponto do azul!
+ 154.7 s  {"score": [55, 0], "tags": [35, 0, 147, 0]}  hero_3 segurou o hero_0 por 4 s
+ 156.0 s  {"score": [55, 0], "tags": [35, 0, 148, 0]}  hero_1 segurou o hero_2 por 4 s
+ 161.5 s  {"score": [55, 0], "tags": [35, 0, 149, 0]}  hero_1 segurou o hero_2 por 4 s
+ 167.0 s  {"score": [55, 0], "tags": [35, 0, 150, 0]}  hero_1 segurou o hero_2 por 4 s
+ 168.5 s  {"score": [56, 0], "tags": [35, 0, 150, 0]}  Ponto do azul!
+ 175.8 s  {"score": [56, 0], "tags": [35, 0, 151, 0]}  hero_1 segurou o hero_2 por 4 s
+ 181.3 s  {"score": [56, 0], "tags": [35, 0, 152, 0]}  hero_1 segurou o hero_2 por 4 s
+ 184.1 s  {"score": [57, 0], "tags": [35, 0, 152, 0]}  Ponto do azul!
+ 190.2 s  {"score": [57, 0], "tags": [36, 0, 152, 0]}  hero_3 segurou o hero_0 por 4 s
+ 191.4 s  {"score": [57, 0], "tags": [36, 0, 153, 0]}  hero_1 segurou o hero_2 por 4 s
+ 196.9 s  {"score": [57, 0], "tags": [36, 0, 154, 0]}  hero_1 segurou o hero_2 por 4 s
+ 202.4 s  {"score": [57, 0], "tags": [36, 0, 155, 0]}  hero_1 segurou o hero_2 por 4 s
+ 208.1 s  {"score": [58, 0], "tags": [36, 0, 155, 0]}  Ponto do azul!
+ 214.4 s  {"score": [58, 0], "tags": [37, 0, 155, 0]}  hero_3 segurou o hero_0 por 4 s
+ 215.4 s  {"score": [58, 0], "tags": [37, 0, 156, 0]}  hero_1 segurou o hero_2 por 4 s
+ 221.0 s  {"score": [58, 0], "tags": [37, 0, 157, 0]}  hero_1 segurou o hero_2 por 4 s
+ 226.5 s  {"score": [58, 0], "tags": [37, 0, 158, 0]}  hero_1 segurou o hero_2 por 4 s
+ 228.1 s  {"score": [59, 0], "tags": [37, 0, 158, 0]}  Ponto do azul!
+ 234.2 s  {"score": [59, 0], "tags": [38, 0, 158, 0]}  hero_3 segurou o hero_0 por 4 s
+ 235.5 s  {"score": [59, 0], "tags": [38, 0, 159, 0]}  hero_1 segurou o hero_2 por 4 s
+ 241.0 s  {"score": [59, 0], "tags": [38, 0, 160, 0]}  hero_1 segurou o hero_2 por 4 s
+ 246.6 s  {"score": [59, 0], "tags": [38, 0, 161, 0]}  hero_1 segurou o hero_2 por 4 s
+ 248.1 s  {"score": [60, 0], "tags": [38, 0, 161, 0]}  Ponto do azul!
+ 255.5 s  {"score": [60, 0], "tags": [38, 0, 162, 0]}  hero_1 segurou o hero_2 por 4 s
+ 261.0 s  {"score": [60, 0], "tags": [38, 0, 163, 0]}  hero_1 segurou o hero_2 por 4 s
+ 263.8 s  {"score": [61, 0], "tags": [38, 0, 163, 0]}  Ponto do azul!
+ 269.9 s  {"score": [61, 0], "tags": [39, 0, 163, 0]}  hero_3 segurou o hero_0 por 4 s
+ 271.0 s  {"score": [61, 0], "tags": [39, 0, 164, 0]}  hero_1 segurou o hero_2 por 4 s
+ 276.6 s  {"score": [61, 0], "tags": [39, 0, 165, 0]}  hero_1 segurou o hero_2 por 4 s
+ 282.1 s  {"score": [61, 0], "tags": [39, 0, 166, 0]}  hero_1 segurou o hero_2 por 4 s
+ 283.7 s  {"score": [62, 0], "tags": [39, 0, 166, 0]}  Ponto do azul!
+ 289.8 s  {"score": [62, 0], "tags": [40, 0, 166, 0]}  hero_3 segurou o hero_0 por 4 s
+ 291.1 s  {"score": [62, 0], "tags": [40, 0, 167, 0]}  hero_1 segurou o hero_2 por 4 s
+ 296.6 s  {"score": [62, 0], "tags": [40, 0, 168, 0]}  hero_1 segurou o hero_2 por 4 s
+fim 300.0 s  resultado da partida: {"score": [15, 0], "tags": [12, 0, 43, 0]}

@@ -1,0 +1,29 @@
+inicio t=14.5 {"blue": 1, "red": 0}
+   0.0 s  {"blue": 1, "red": 0}  
+   7.2 s  {"blue": 2, "red": 0}  Gol do azul!
+  17.7 s  {"blue": 3, "red": 0}  Gol do azul!
+  28.6 s  {"blue": 4, "red": 0}  Gol do azul!
+  39.6 s  {"blue": 5, "red": 0}  Gol do azul!
+  50.5 s  {"blue": 6, "red": 0}  Gol do azul!
+  60.2 s  {"blue": 7, "red": 0}  Gol do azul!
+  73.8 s  {"blue": 8, "red": 0}  Gol do azul!
+  84.6 s  {"blue": 9, "red": 0}  Gol do azul!
+  95.3 s  {"blue": 10, "red": 0}  Gol do azul!
+ 106.7 s  {"blue": 11, "red": 0}  Gol do azul!
+ 118.7 s  {"blue": 12, "red": 0}  Gol do azul!
+ 129.2 s  {"blue": 13, "red": 0}  Gol do azul!
+ 140.3 s  {"blue": 14, "red": 0}  Gol do azul!
+ 155.0 s  {"blue": 15, "red": 0}  Gol do azul!
+ 169.0 s  {"blue": 16, "red": 0}  Gol do azul!
+ 180.3 s  {"blue": 17, "red": 0}  Gol do azul!
+ 191.5 s  {"blue": 18, "red": 0}  Gol do azul!
+ 200.5 s  {"blue": 19, "red": 0}  Gol do azul!
+ 214.2 s  {"blue": 20, "red": 0}  Gol do azul!
+ 225.2 s  {"blue": 21, "red": 0}  Gol do azul!
+ 234.8 s  {"blue": 22, "red": 0}  Gol do azul!
+ 245.5 s  {"blue": 23, "red": 0}  Gol do azul!
+ 257.2 s  {"blue": 24, "red": 0}  Gol do azul!
+ 269.4 s  {"blue": 25, "red": 0}  Gol do azul!
+ 280.8 s  {"blue": 26, "red": 0}  Gol do azul!
+ 294.9 s  {"blue": 27, "red": 0}  Gol do azul!
+fim 300.0 s  resultado da partida: {"blue": 26, "red": 0}

@@ -1,0 +1,3 @@
+inicio t=43.6 {"blue": 0, "red": 0}
+   0.0 s  {"blue": 0, "red": 0}  
+fim 300.0 s  resultado da partida: {"blue": 0, "red": 0}
